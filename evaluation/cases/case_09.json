@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "case_id": "case_09",
+    "title": "Conflicting constraints",
+    "description": "Limited study hours and multiple urgent tasks cannot all fit; plan should explain trade-offs.",
+    "difficulty": "hard",
+    "tags": ["capacity", "tradeoffs"]
+  },
+  "input": {
+    "student_id": "demo_student_09",
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "planning_horizon_days": 3,
+    "courses": [
+      { "id": "os", "code": "CS-301", "name": "Operating Systems" },
+      { "id": "ds", "code": "CS-210", "name": "Data Structures" }
+    ],
+    "deadlines": [
+      {
+        "id": "assignment_os",
+        "course_id": "os",
+        "title": "Kernel Module",
+        "type": "assignment",
+        "due_at": "2026-09-09T23:59:00+05:00",
+        "estimated_hours": 10
+      },
+      {
+        "id": "assignment_ds",
+        "course_id": "ds",
+        "title": "Graph Project",
+        "type": "assignment",
+        "due_at": "2026-09-08T23:59:00+05:00",
+        "estimated_hours": 8
+      },
+      {
+        "id": "quiz_os",
+        "course_id": "os",
+        "title": "Synchronization Quiz",
+        "type": "quiz",
+        "due_at": "2026-09-07T20:00:00+05:00",
+        "estimated_hours": 2
+      }
+    ],
+    "timetable": [
+      {
+        "id": "class_os_mon",
+        "course_id": "os",
+        "weekday": 0,
+        "start": "14:00",
+        "end": "16:00",
+        "title": "Operating Systems",
+        "venue": "A-6"
+      }
+    ],
+    "existing_events": [
+      {
+        "id": "existing_event_1",
+        "title": "Part-time shift",
+        "start": "2026-09-07T17:00:00+05:00",
+        "end": "2026-09-07T21:00:00+05:00",
+        "blocks_study": true
+      }
+    ],
+    "preferences": {
+      "timezone": "Asia/Karachi",
+      "max_study_hours_per_day": 3
+    }
+  },
+  "ground_truth": {
+    "must_schedule_before": ["quiz_os"],
+    "must_not_overlap": ["class_os_mon", "existing_event_1"],
+    "must_not_invent": true,
+    "expect_insufficient_capacity": true,
+    "max_study_hours_per_day": 3
+  }
+}

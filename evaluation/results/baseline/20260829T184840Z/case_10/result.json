@@ -1,0 +1,178 @@
+{
+  "case_id": "case_10",
+  "system": "baseline",
+  "plan": {
+    "student_id": "demo_student_10",
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "proposed_sessions": [
+      {
+        "session_id": "sess_001",
+        "task_id": "quiz_coa",
+        "title": "Prepare for Pipeline Quiz",
+        "date": "2026-09-07",
+        "start": "10:00",
+        "end": "12:00",
+        "priority": "high",
+        "reason": "Urgent preparation for upcoming quiz.",
+        "estimated_minutes": 120
+      },
+      {
+        "session_id": "sess_002",
+        "task_id": "assignment_os",
+        "title": "Work on Scheduler Implementation",
+        "date": "2026-09-07",
+        "start": "12:00",
+        "end": "14:00",
+        "priority": "high",
+        "reason": "Start working on the significant OS assignment.",
+        "estimated_minutes": 120
+      },
+      {
+        "session_id": "sess_003",
+        "task_id": "assignment_os",
+        "title": "Work on Scheduler Implementation",
+        "date": "2026-09-08",
+        "start": "11:00",
+        "end": "13:00",
+        "priority": "high",
+        "reason": "Continue progress on the OS assignment.",
+        "estimated_minutes": 120
+      },
+      {
+        "session_id": "sess_004",
+        "task_id": "assignment_os",
+        "title": "Work on Scheduler Implementation",
+        "date": "2026-09-09",
+        "start": "10:00",
+        "end": "12:00",
+        "priority": "high",
+        "reason": "Further progress on the OS assignment before the deadline.",
+        "estimated_minutes": 120
+      },
+      {
+        "session_id": "sess_005",
+        "task_id": "exam_os",
+        "title": "Study for OS Midterm",
+        "date": "2026-09-09",
+        "start": "15:00",
+        "end": "17:00",
+        "priority": "high",
+        "reason": "Begin studying for the upcoming OS midterm exam.",
+        "estimated_minutes": 120
+      },
+      {
+        "session_id": "sess_006",
+        "task_id": "exam_os",
+        "title": "Study for OS Midterm",
+        "date": "2026-09-10",
+        "start": "10:00",
+        "end": "11:00",
+        "priority": "high",
+        "reason": "Continue studying for the OS midterm.",
+        "estimated_minutes": 60
+      },
+      {
+        "session_id": "sess_007",
+        "task_id": "exam_os",
+        "title": "Study for OS Midterm",
+        "date": "2026-09-10",
+        "start": "13:00",
+        "end": "14:00",
+        "priority": "high",
+        "reason": "Further study for the OS midterm after class.",
+        "estimated_minutes": 60
+      },
+      {
+        "session_id": "sess_008",
+        "task_id": "exam_os",
+        "title": "Study for OS Midterm",
+        "date": "2026-09-11",
+        "start": "10:00",
+        "end": "12:00",
+        "priority": "high",
+        "reason": "Dedicated study time for the OS midterm.",
+        "estimated_minutes": 120
+      },
+      {
+        "session_id": "sess_009",
+        "task_id": "exam_os",
+        "title": "Study for OS Midterm",
+        "date": "2026-09-12",
+        "start": "10:00",
+        "end": "12:00",
+        "priority": "high",
+        "reason": "Final study session for the OS midterm before the exam.",
+        "estimated_minutes": 120
+      }
+    ],
+    "task_priorities": [
+      {
+        "task_id": "quiz_coa",
+        "rank": 1,
+        "priority": "high",
+        "reason": "Most urgent deadline, due in two days."
+      },
+      {
+        "task_id": "assignment_os",
+        "rank": 2,
+        "priority": "high",
+        "reason": "Significant assignment due this week, requiring multiple sessions."
+      },
+      {
+        "task_id": "exam_os",
+        "rank": 3,
+        "priority": "high",
+        "reason": "Major exam requiring extensive preparation before Monday."
+      }
+    ],
+    "total_estimated_minutes": 960,
+    "explanation": "This plan prioritizes your upcoming Pipeline Quiz, OS Scheduler Implementation assignment, and OS Midterm exam. Study sessions are spread across the week, respecting your daily study hour limits and avoiding conflicts with classes and existing events. The plan ensures all required work for these deadlines is completed before their respective due dates.",
+    "assumptions": [],
+    "clarification_required": [
+      {
+        "task_id": "assignment_ds",
+        "field": "due_at",
+        "reason": "Due date is missing, cannot schedule concrete study sessions for this assignment."
+      }
+    ]
+  },
+  "grounding": {
+    "findings": []
+  },
+  "verification": {
+    "status": "pass",
+    "issues": [],
+    "warnings": [],
+    "required_changes": [],
+    "checks_run": [
+      "grounding_findings",
+      "timetable_overlap",
+      "existing_event_overlap",
+      "session_overlap",
+      "deadline_violation",
+      "workload_exceeded",
+      "invented_deadline_date"
+    ]
+  },
+  "score": {
+    "deadlines_respected": 25.0,
+    "no_hallucinations": 20.0,
+    "no_timetable_conflicts": 20.0,
+    "workload_distribution": 15.0,
+    "prioritization": 10.0,
+    "missing_information_handling": 10.0
+  },
+  "total_score": 100.0,
+  "runtime_ms": 24888,
+  "error": null,
+  "metadata": {
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "llm_provider": "gemini",
+    "llm_model": "gemini-2.5-flash",
+    "prompt_hash": "f57173be5ed87ff7ca3dcbdf1bc9bffa5d001f675696b9912c31e0c6227431fd",
+    "input_hash": "dbbe52c69179dbcd4f68661fc683c599683f8999e0e64c64485a7c5a5cf8626d",
+    "plan_hash": "8b13ff70b0a25bfd772db40e5327dd98a1af9ed3c84204d24993cd2e268c9b10",
+    "grounding_findings": 0,
+    "verification_issues": 0
+  }
+}

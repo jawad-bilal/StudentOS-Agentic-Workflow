@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "case_id": "case_05",
+    "title": "Overloaded day",
+    "description": "Multiple deadlines should be spread instead of crammed into one day.",
+    "difficulty": "medium",
+    "tags": ["workload", "spread"]
+  },
+  "input": {
+    "student_id": "demo_student_05",
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "planning_horizon_days": 7,
+    "courses": [
+      { "id": "os", "code": "CS-301", "name": "Operating Systems" },
+      { "id": "ds", "code": "CS-210", "name": "Data Structures" }
+    ],
+    "deadlines": [
+      {
+        "id": "assignment_os",
+        "course_id": "os",
+        "title": "OS Lab Writeup",
+        "type": "assignment",
+        "due_at": "2026-09-09T23:59:00+05:00",
+        "estimated_hours": 4
+      },
+      {
+        "id": "assignment_ds",
+        "course_id": "ds",
+        "title": "Graph Assignment",
+        "type": "assignment",
+        "due_at": "2026-09-09T23:59:00+05:00",
+        "estimated_hours": 4
+      },
+      {
+        "id": "quiz_os",
+        "course_id": "os",
+        "title": "Threads Quiz",
+        "type": "quiz",
+        "due_at": "2026-09-08T23:59:00+05:00",
+        "estimated_hours": 2
+      }
+    ],
+    "timetable": [],
+    "existing_events": [],
+    "preferences": {
+      "timezone": "Asia/Karachi",
+      "max_study_hours_per_day": 4
+    }
+  },
+  "ground_truth": {
+    "must_schedule_before": ["assignment_os", "assignment_ds", "quiz_os"],
+    "must_not_invent": true,
+    "expect_spread_across_days": true,
+    "min_distinct_study_days": 2,
+    "max_study_hours_per_day": 4
+  }
+}

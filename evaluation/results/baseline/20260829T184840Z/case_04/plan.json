@@ -1,0 +1,40 @@
+{
+  "student_id": "demo_student_04",
+  "reference_now": "2026-09-07T08:00:00+05:00",
+  "proposed_sessions": [
+    {
+      "session_id": "sess_001",
+      "task_id": "assignment_1",
+      "title": "Work on Shell Assignment",
+      "date": "2026-09-07",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "high",
+      "reason": "Start working on the Shell Assignment for CS-301, due on September 11th.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_002",
+      "task_id": "assignment_1",
+      "title": "Continue Shell Assignment",
+      "date": "2026-09-07",
+      "start": "12:30",
+      "end": "14:30",
+      "priority": "high",
+      "reason": "Continue progress on the Shell Assignment to complete the estimated 4 hours of work before the deadline.",
+      "estimated_minutes": 120
+    }
+  ],
+  "task_priorities": [
+    {
+      "task_id": "assignment_1",
+      "rank": 1,
+      "priority": "high",
+      "reason": "This assignment is due on 2026-09-11 and requires 4 hours of dedicated work."
+    }
+  ],
+  "total_estimated_minutes": 240,
+  "explanation": "This plan focuses on completing the 'Shell Assignment' for CS-301, which is due on September 11th. Two study sessions are scheduled for Monday, September 7th, to cover the estimated 4 hours of work. This approach ensures the assignment is tackled early, well before its deadline, and respects your daily study hour limits.",
+  "assumptions": [],
+  "clarification_required": []
+}

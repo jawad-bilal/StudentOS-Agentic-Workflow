@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "case_id": "case_04",
+    "title": "Existing planner conflict",
+    "description": "An existing gym event blocks an otherwise open evening window.",
+    "difficulty": "medium",
+    "tags": ["existing_event", "conflict"]
+  },
+  "input": {
+    "student_id": "demo_student_04",
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "planning_horizon_days": 7,
+    "courses": [
+      { "id": "os", "code": "CS-301", "name": "Operating Systems" }
+    ],
+    "deadlines": [
+      {
+        "id": "assignment_1",
+        "course_id": "os",
+        "title": "Shell Assignment",
+        "type": "assignment",
+        "due_at": "2026-09-11T23:59:00+05:00",
+        "estimated_hours": 4
+      }
+    ],
+    "timetable": [],
+    "existing_events": [
+      {
+        "id": "existing_event_1",
+        "title": "Gym",
+        "start": "2026-09-07T18:00:00+05:00",
+        "end": "2026-09-07T19:00:00+05:00",
+        "blocks_study": true
+      }
+    ],
+    "preferences": {
+      "timezone": "Asia/Karachi",
+      "max_study_hours_per_day": 4
+    }
+  },
+  "ground_truth": {
+    "must_schedule_before": ["assignment_1"],
+    "must_not_overlap": ["existing_event_1"],
+    "must_not_invent": true
+  }
+}

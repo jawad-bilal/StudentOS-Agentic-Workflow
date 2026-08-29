@@ -1,0 +1,16 @@
+{
+  "case_id": "case_02",
+  "system": "baseline",
+  "plan": null,
+  "grounding": {
+    "findings": []
+  },
+  "verification": null,
+  "score": null,
+  "total_score": 0.0,
+  "runtime_ms": 17532,
+  "error": "Schema validation failed: 3 validation errors for AcademicPlan\nproposed_sessions.1.priority\n  Input should be 'low', 'medium' or 'high' [type=enum, input_value='medium-high', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/enum\nproposed_sessions.2.priority\n  Input should be 'low', 'medium' or 'high' [type=enum, input_value='medium-high', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/enum\ntask_priorities.1.priority\n  Input should be 'low', 'medium' or 'high' [type=enum, input_value='medium-high', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/enum",
+  "metadata": {
+    "reference_now": "2026-09-07T08:00:00+05:00"
+  }
+}

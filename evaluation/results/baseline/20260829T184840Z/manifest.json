@@ -1,0 +1,163 @@
+{
+  "run_id": "20260829T184840Z",
+  "system": "baseline",
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "started_at": "2026-08-29T18:48:40.618237+00:00",
+  "cases": [
+    {
+      "case_id": "case_01",
+      "total_score": 100.0,
+      "error": null,
+      "runtime_ms": 16684,
+      "metadata": {
+        "reference_now": "2026-09-07T08:00:00+05:00",
+        "llm_provider": "gemini",
+        "llm_model": "gemini-2.5-flash",
+        "prompt_hash": "8f5c22af0bd730a959115031ee5a54ffb47d5b4dec9b293eb1733a0ad148a53a",
+        "input_hash": "b3ffb1e996f5c4a86ff43bb3cc5d053f7e35ddf4a0f05df727c6d395b5157af4",
+        "plan_hash": "89a1db4ca6bb859f6e976db06230e8af9ba93bebab9379c1467663f62fd24922",
+        "grounding_findings": 0,
+        "verification_issues": 0
+      }
+    },
+    {
+      "case_id": "case_02",
+      "total_score": 0.0,
+      "error": "Schema validation failed: 3 validation errors for AcademicPlan\nproposed_sessions.1.priority\n  Input should be 'low', 'medium' or 'high' [type=enum, input_value='medium-high', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/enum\nproposed_sessions.2.priority\n  Input should be 'low', 'medium' or 'high' [type=enum, input_value='medium-high', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/enum\ntask_priorities.1.priority\n  Input should be 'low', 'medium' or 'high' [type=enum, input_value='medium-high', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/enum",
+      "runtime_ms": 17532,
+      "metadata": {
+        "reference_now": "2026-09-07T08:00:00+05:00"
+      }
+    },
+    {
+      "case_id": "case_03",
+      "total_score": 100.0,
+      "error": null,
+      "runtime_ms": 13219,
+      "metadata": {
+        "reference_now": "2026-09-07T08:00:00+05:00",
+        "llm_provider": "gemini",
+        "llm_model": "gemini-2.5-flash",
+        "prompt_hash": "70f4e46acd133527458a2231280b58a6f24d672f318205851c7e1e0779ce3b0d",
+        "input_hash": "7a503af208476ac41160a06c4b3226176042b97022bd18d65e06f4dbb02bd63f",
+        "plan_hash": "d98fb8c352754b4c9f4abf81aff24c4785fc715fce013b971c3fca28f9c4b395",
+        "grounding_findings": 0,
+        "verification_issues": 0
+      }
+    },
+    {
+      "case_id": "case_04",
+      "total_score": 100.0,
+      "error": null,
+      "runtime_ms": 14823,
+      "metadata": {
+        "reference_now": "2026-09-07T08:00:00+05:00",
+        "llm_provider": "gemini",
+        "llm_model": "gemini-2.5-flash",
+        "prompt_hash": "9b4bd1be04282826c2e30b58e5ec90c38708f43da0e81fa44f4bc4acba6db738",
+        "input_hash": "78cf8ee59d4959e24b2493e8c8a575f0539a71956e595b6fd7c2e7fba7bc4793",
+        "plan_hash": "ff724e03757b70e2264e455a233129dc78601b38391d9d67a2092c4dbcf021e1",
+        "grounding_findings": 0,
+        "verification_issues": 0
+      }
+    },
+    {
+      "case_id": "case_05",
+      "total_score": 100.0,
+      "error": null,
+      "runtime_ms": 18572,
+      "metadata": {
+        "reference_now": "2026-09-07T08:00:00+05:00",
+        "llm_provider": "gemini",
+        "llm_model": "gemini-2.5-flash",
+        "prompt_hash": "9d2f4b63157e659ed605895c7c5ea1000df566923ff540a672fc7ff0f3147ce5",
+        "input_hash": "bc3f49fdc75ba4a7f7f52f71c4e1769490c0f37d68105c4bf08d8b635503d912",
+        "plan_hash": "e0905ffc382446e44695451d4d67b7a928665e5784ca42cf6265d3191ace0e10",
+        "grounding_findings": 0,
+        "verification_issues": 0
+      }
+    },
+    {
+      "case_id": "case_06",
+      "total_score": 93.0,
+      "error": null,
+      "runtime_ms": 6667,
+      "metadata": {
+        "reference_now": "2026-09-07T08:00:00+05:00",
+        "llm_provider": "gemini",
+        "llm_model": "gemini-2.5-flash",
+        "prompt_hash": "e6befce80bb2882fdca5f4974b3bd679a149180e132314de79b24a7977573eac",
+        "input_hash": "6c8ee27a1c7a12ccb166fd0e769259052ca2a0e4d9381a1e61fe8f1ae542ce1e",
+        "plan_hash": "d0040473389ce33eedb2bc61d09f88d171b21f022bb7e257d468a6fc6b37a2f6",
+        "grounding_findings": 0,
+        "verification_issues": 0
+      }
+    },
+    {
+      "case_id": "case_07",
+      "total_score": 100.0,
+      "error": null,
+      "runtime_ms": 12471,
+      "metadata": {
+        "reference_now": "2026-09-07T08:00:00+05:00",
+        "llm_provider": "gemini",
+        "llm_model": "gemini-2.5-flash",
+        "prompt_hash": "b33c17fb64d9368f5158b2e37816158b4e2681dd78110fafbf119b45b02648e9",
+        "input_hash": "5c32f5e0d3530632e5deb7afb04d80642ec292d69d4c289fabc1adf01783973e",
+        "plan_hash": "d38ecabf3880d2cdecbdded5c814582174c8a37ca7e299067a2b0e7116c5d829",
+        "grounding_findings": 0,
+        "verification_issues": 0
+      }
+    },
+    {
+      "case_id": "case_08",
+      "total_score": 100.0,
+      "error": null,
+      "runtime_ms": 20244,
+      "metadata": {
+        "reference_now": "2026-09-07T08:00:00+05:00",
+        "llm_provider": "gemini",
+        "llm_model": "gemini-2.5-flash",
+        "prompt_hash": "e3abd42a0b655b3d30bbc441bc782e504121f69427da509e618d29ba72cad0a5",
+        "input_hash": "c41cb91a1d52580d3a81bc3791832439f31894f54b04d811ebbad095a4231184",
+        "plan_hash": "63f666cf0c66d517a75724348077ef43c9d6bbea68c348a12324a6bc586e7c0f",
+        "grounding_findings": 0,
+        "verification_issues": 0
+      }
+    },
+    {
+      "case_id": "case_09",
+      "total_score": 95.0,
+      "error": null,
+      "runtime_ms": 28583,
+      "metadata": {
+        "reference_now": "2026-09-07T08:00:00+05:00",
+        "llm_provider": "gemini",
+        "llm_model": "gemini-2.5-flash",
+        "prompt_hash": "59b128857b9b91619cce8bec5e4cb388f15fc51c84b20cb1405eaa5274d526b7",
+        "input_hash": "554efc463ace3a335732379869f1cf3cb0ee8af2e5e01dee026211fe4f3c281d",
+        "plan_hash": "b28ef6abe4b6ad49bcca13c8725b18e60b91e4e1abc8da981f0b2acf02ed5595",
+        "grounding_findings": 0,
+        "verification_issues": 0
+      }
+    },
+    {
+      "case_id": "case_10",
+      "total_score": 100.0,
+      "error": null,
+      "runtime_ms": 24888,
+      "metadata": {
+        "reference_now": "2026-09-07T08:00:00+05:00",
+        "llm_provider": "gemini",
+        "llm_model": "gemini-2.5-flash",
+        "prompt_hash": "f57173be5ed87ff7ca3dcbdf1bc9bffa5d001f675696b9912c31e0c6227431fd",
+        "input_hash": "dbbe52c69179dbcd4f68661fc683c599683f8999e0e64c64485a7c5a5cf8626d",
+        "plan_hash": "8b13ff70b0a25bfd772db40e5327dd98a1af9ed3c84204d24993cd2e268c9b10",
+        "grounding_findings": 0,
+        "verification_issues": 0
+      }
+    }
+  ],
+  "finished_at": "2026-08-29T18:51:34.375446+00:00"
+}

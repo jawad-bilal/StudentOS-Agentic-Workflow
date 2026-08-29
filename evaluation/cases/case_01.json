@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "case_id": "case_01",
+    "title": "Simple schedule",
+    "description": "One assignment, one quiz, normal timetable.",
+    "difficulty": "easy",
+    "tags": ["simple"]
+  },
+  "input": {
+    "student_id": "demo_student_01",
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "planning_horizon_days": 7,
+    "courses": [
+      { "id": "os", "code": "CS-301", "name": "Operating Systems" }
+    ],
+    "deadlines": [
+      {
+        "id": "assignment_1",
+        "course_id": "os",
+        "title": "Process Scheduling Assignment",
+        "type": "assignment",
+        "due_at": "2026-09-10T23:59:00+05:00",
+        "estimated_hours": 4
+      },
+      {
+        "id": "quiz_1",
+        "course_id": "os",
+        "title": "Memory Management Quiz",
+        "type": "quiz",
+        "due_at": "2026-09-09T12:00:00+05:00",
+        "estimated_hours": 2
+      }
+    ],
+    "timetable": [
+      {
+        "id": "class_os_mon",
+        "course_id": "os",
+        "weekday": 0,
+        "start": "09:00",
+        "end": "11:00",
+        "title": "Operating Systems",
+        "venue": "A-6"
+      }
+    ],
+    "existing_events": [],
+    "preferences": {
+      "timezone": "Asia/Karachi",
+      "max_study_hours_per_day": 4,
+      "preferred_study_start": "10:00",
+      "preferred_study_end": "22:00"
+    }
+  },
+  "ground_truth": {
+    "must_schedule_before": ["assignment_1", "quiz_1"],
+    "must_not_invent": true,
+    "max_study_hours_per_day": 4
+  }
+}
