@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "case_id": "case_08",
+    "title": "Multiple courses",
+    "description": "OS, DSP, and COA assignments require reasonable cross-course prioritization.",
+    "difficulty": "medium",
+    "tags": ["multiple_courses", "prioritization"]
+  },
+  "input": {
+    "student_id": "demo_student_08",
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "planning_horizon_days": 10,
+    "courses": [
+      { "id": "os", "code": "CS-301", "name": "Operating Systems" },
+      { "id": "dsp", "code": "EE-320", "name": "Digital Signal Processing" },
+      { "id": "coa", "code": "CS-220", "name": "Computer Organization" }
+    ],
+    "deadlines": [
+      {
+        "id": "assignment_os",
+        "course_id": "os",
+        "title": "Virtual Memory Report",
+        "type": "assignment",
+        "due_at": "2026-09-13T23:59:00+05:00",
+        "estimated_hours": 5
+      },
+      {
+        "id": "assignment_dsp",
+        "course_id": "dsp",
+        "title": "FFT Lab",
+        "type": "lab",
+        "due_at": "2026-09-10T23:59:00+05:00",
+        "estimated_hours": 4
+      },
+      {
+        "id": "exam_coa",
+        "course_id": "coa",
+        "title": "Midterm Exam",
+        "type": "exam",
+        "due_at": "2026-09-11T09:00:00+05:00",
+        "estimated_hours": 6
+      }
+    ],
+    "timetable": [],
+    "existing_events": [],
+    "preferences": {
+      "timezone": "Asia/Karachi",
+      "max_study_hours_per_day": 4
+    }
+  },
+  "ground_truth": {
+    "must_schedule_before": ["assignment_os", "assignment_dsp", "exam_coa"],
+    "expect_high_priority_for": ["assignment_dsp", "exam_coa"],
+    "must_not_invent": true
+  }
+}

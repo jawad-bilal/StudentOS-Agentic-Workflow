@@ -1,0 +1,40 @@
+{
+  "student_id": "demo_student_03",
+  "reference_now": "2026-09-07T08:00:00+05:00",
+  "proposed_sessions": [
+    {
+      "session_id": "sess_001",
+      "task_id": "assignment_1",
+      "title": "Work on OS Assignment 1",
+      "date": "2026-09-07",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "high",
+      "reason": "Start working on the upcoming Operating Systems assignment due on Thursday.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_002",
+      "task_id": "assignment_1",
+      "title": "Continue OS Assignment 1",
+      "date": "2026-09-08",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "high",
+      "reason": "Continue progress on the Operating Systems assignment to ensure completion before the deadline.",
+      "estimated_minutes": 120
+    }
+  ],
+  "task_priorities": [
+    {
+      "task_id": "assignment_1",
+      "rank": 1,
+      "priority": "high",
+      "reason": "This assignment is due on Thursday, September 10th, requiring immediate attention."
+    }
+  ],
+  "total_estimated_minutes": 240,
+  "explanation": "This plan focuses on completing your 'Process Scheduling Assignment' for Operating Systems, which is due on Thursday. It schedules two 2-hour study sessions on Monday and Tuesday mornings, allowing you to make significant progress and finish the assignment well before the deadline. These sessions respect your preferred study times and daily study hour limits, avoiding conflicts with your Monday OS class.",
+  "assumptions": [],
+  "clarification_required": []
+}

@@ -1,0 +1,83 @@
+{
+  "case_id": "case_03",
+  "system": "baseline",
+  "plan": {
+    "student_id": "demo_student_03",
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "proposed_sessions": [
+      {
+        "session_id": "sess_001",
+        "task_id": "assignment_1",
+        "title": "Work on OS Assignment 1",
+        "date": "2026-09-07",
+        "start": "10:00",
+        "end": "12:00",
+        "priority": "high",
+        "reason": "Start working on the upcoming Operating Systems assignment due on Thursday.",
+        "estimated_minutes": 120
+      },
+      {
+        "session_id": "sess_002",
+        "task_id": "assignment_1",
+        "title": "Continue OS Assignment 1",
+        "date": "2026-09-08",
+        "start": "10:00",
+        "end": "12:00",
+        "priority": "high",
+        "reason": "Continue progress on the Operating Systems assignment to ensure completion before the deadline.",
+        "estimated_minutes": 120
+      }
+    ],
+    "task_priorities": [
+      {
+        "task_id": "assignment_1",
+        "rank": 1,
+        "priority": "high",
+        "reason": "This assignment is due on Thursday, September 10th, requiring immediate attention."
+      }
+    ],
+    "total_estimated_minutes": 240,
+    "explanation": "This plan focuses on completing your 'Process Scheduling Assignment' for Operating Systems, which is due on Thursday. It schedules two 2-hour study sessions on Monday and Tuesday mornings, allowing you to make significant progress and finish the assignment well before the deadline. These sessions respect your preferred study times and daily study hour limits, avoiding conflicts with your Monday OS class.",
+    "assumptions": [],
+    "clarification_required": []
+  },
+  "grounding": {
+    "findings": []
+  },
+  "verification": {
+    "status": "pass",
+    "issues": [],
+    "warnings": [],
+    "required_changes": [],
+    "checks_run": [
+      "grounding_findings",
+      "timetable_overlap",
+      "existing_event_overlap",
+      "session_overlap",
+      "deadline_violation",
+      "workload_exceeded",
+      "invented_deadline_date"
+    ]
+  },
+  "score": {
+    "deadlines_respected": 25.0,
+    "no_hallucinations": 20.0,
+    "no_timetable_conflicts": 20.0,
+    "workload_distribution": 15.0,
+    "prioritization": 10.0,
+    "missing_information_handling": 10.0
+  },
+  "total_score": 100.0,
+  "runtime_ms": 13219,
+  "error": null,
+  "metadata": {
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "llm_provider": "gemini",
+    "llm_model": "gemini-2.5-flash",
+    "prompt_hash": "70f4e46acd133527458a2231280b58a6f24d672f318205851c7e1e0779ce3b0d",
+    "input_hash": "7a503af208476ac41160a06c4b3226176042b97022bd18d65e06f4dbb02bd63f",
+    "plan_hash": "d98fb8c352754b4c9f4abf81aff24c4785fc715fce013b971c3fca28f9c4b395",
+    "grounding_findings": 0,
+    "verification_issues": 0
+  }
+}

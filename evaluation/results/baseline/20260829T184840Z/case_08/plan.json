@@ -1,0 +1,121 @@
+{
+  "student_id": "demo_student_08",
+  "reference_now": "2026-09-07T08:00:00+05:00",
+  "proposed_sessions": [
+    {
+      "session_id": "sess_001",
+      "task_id": "assignment_dsp",
+      "title": "Work on FFT Lab",
+      "date": "2026-09-07",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "high",
+      "reason": "To complete FFT Lab before its deadline on 2026-09-10.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_002",
+      "task_id": "assignment_dsp",
+      "title": "Work on FFT Lab",
+      "date": "2026-09-07",
+      "start": "12:00",
+      "end": "14:00",
+      "priority": "high",
+      "reason": "To complete FFT Lab before its deadline on 2026-09-10.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_003",
+      "task_id": "exam_coa",
+      "title": "Study for Midterm Exam",
+      "date": "2026-09-08",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "high",
+      "reason": "To prepare for Midterm Exam before its deadline on 2026-09-11.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_004",
+      "task_id": "exam_coa",
+      "title": "Study for Midterm Exam",
+      "date": "2026-09-08",
+      "start": "12:00",
+      "end": "14:00",
+      "priority": "high",
+      "reason": "To prepare for Midterm Exam before its deadline on 2026-09-11.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_005",
+      "task_id": "exam_coa",
+      "title": "Study for Midterm Exam",
+      "date": "2026-09-09",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "high",
+      "reason": "To prepare for Midterm Exam before its deadline on 2026-09-11.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_006",
+      "task_id": "assignment_os",
+      "title": "Work on Virtual Memory Report",
+      "date": "2026-09-09",
+      "start": "12:00",
+      "end": "14:00",
+      "priority": "medium",
+      "reason": "To work on Virtual Memory Report before its deadline on 2026-09-13.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_007",
+      "task_id": "assignment_os",
+      "title": "Work on Virtual Memory Report",
+      "date": "2026-09-10",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "medium",
+      "reason": "To work on Virtual Memory Report before its deadline on 2026-09-13.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_008",
+      "task_id": "assignment_os",
+      "title": "Work on Virtual Memory Report",
+      "date": "2026-09-10",
+      "start": "12:00",
+      "end": "13:00",
+      "priority": "medium",
+      "reason": "To work on Virtual Memory Report before its deadline on 2026-09-13.",
+      "estimated_minutes": 60
+    }
+  ],
+  "task_priorities": [
+    {
+      "task_id": "assignment_dsp",
+      "rank": 1,
+      "priority": "high",
+      "reason": "Due soonest on 2026-09-10."
+    },
+    {
+      "task_id": "exam_coa",
+      "rank": 2,
+      "priority": "high",
+      "reason": "Upcoming exam due on 2026-09-11."
+    },
+    {
+      "task_id": "assignment_os",
+      "rank": 3,
+      "priority": "medium",
+      "reason": "Due on 2026-09-13, after the more urgent tasks."
+    }
+  ],
+  "total_estimated_minutes": 900,
+  "explanation": "This plan schedules all your upcoming assignments and exam preparation within the next four days, respecting your daily study limits. It prioritizes the FFT Lab and Midterm Exam due to their earlier deadlines, followed by the Virtual Memory Report. All sessions are placed within your preferred study hours, ensuring a balanced workload leading up to each deadline.",
+  "assumptions": [
+    "No additional events or timetable conflicts will arise during the planning horizon.",
+    "The estimated hours for each task are accurate and sufficient for completion."
+  ],
+  "clarification_required": []
+}

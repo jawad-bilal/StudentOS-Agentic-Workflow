@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "case_id": "case_02",
+    "title": "Multiple deadlines",
+    "description": "Three assignments with different deadlines require prioritization.",
+    "difficulty": "medium",
+    "tags": ["prioritization", "multiple_deadlines"]
+  },
+  "input": {
+    "student_id": "demo_student_02",
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "planning_horizon_days": 10,
+    "courses": [
+      { "id": "os", "code": "CS-301", "name": "Operating Systems" },
+      { "id": "ds", "code": "CS-210", "name": "Data Structures" }
+    ],
+    "deadlines": [
+      {
+        "id": "assignment_os",
+        "course_id": "os",
+        "title": "Scheduler Report",
+        "type": "assignment",
+        "due_at": "2026-09-12T23:59:00+05:00",
+        "estimated_hours": 5
+      },
+      {
+        "id": "assignment_ds",
+        "course_id": "ds",
+        "title": "BST Project",
+        "type": "assignment",
+        "due_at": "2026-09-10T23:59:00+05:00",
+        "estimated_hours": 4
+      },
+      {
+        "id": "quiz_os",
+        "course_id": "os",
+        "title": "Paging Quiz",
+        "type": "quiz",
+        "due_at": "2026-09-08T18:00:00+05:00",
+        "estimated_hours": 2
+      }
+    ],
+    "timetable": [],
+    "existing_events": [],
+    "preferences": {
+      "timezone": "Asia/Karachi",
+      "max_study_hours_per_day": 4
+    }
+  },
+  "ground_truth": {
+    "must_schedule_before": ["assignment_os", "assignment_ds", "quiz_os"],
+    "must_not_invent": true,
+    "expect_high_priority_for": ["quiz_os", "assignment_ds"]
+  }
+}

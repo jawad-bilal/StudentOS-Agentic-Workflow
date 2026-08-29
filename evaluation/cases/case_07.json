@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "case_id": "case_07",
+    "title": "Tight deadline",
+    "description": "Large assignment due within 48 hours needs high priority and early scheduling.",
+    "difficulty": "hard",
+    "tags": ["urgent", "tight_deadline"]
+  },
+  "input": {
+    "student_id": "demo_student_07",
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "planning_horizon_days": 5,
+    "courses": [
+      { "id": "os", "code": "CS-301", "name": "Operating Systems" }
+    ],
+    "deadlines": [
+      {
+        "id": "assignment_1",
+        "course_id": "os",
+        "title": "Final Project Milestone",
+        "type": "assignment",
+        "due_at": "2026-09-08T23:59:00+05:00",
+        "estimated_hours": 8
+      }
+    ],
+    "timetable": [
+      {
+        "id": "class_os_mon",
+        "course_id": "os",
+        "weekday": 0,
+        "start": "09:00",
+        "end": "11:00",
+        "title": "Operating Systems",
+        "venue": "A-6"
+      }
+    ],
+    "existing_events": [],
+    "preferences": {
+      "timezone": "Asia/Karachi",
+      "max_study_hours_per_day": 4
+    }
+  },
+  "ground_truth": {
+    "must_schedule_before": ["assignment_1"],
+    "must_not_overlap": ["class_os_mon"],
+    "expect_high_priority_for": ["assignment_1"],
+    "min_prep_minutes_for": { "assignment_1": 120 },
+    "must_not_invent": true
+  }
+}
