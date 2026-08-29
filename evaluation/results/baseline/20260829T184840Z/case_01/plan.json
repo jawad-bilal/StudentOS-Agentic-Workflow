@@ -1,0 +1,68 @@
+{
+  "student_id": "demo_student_01",
+  "reference_now": "2026-09-07T08:00:00+05:00",
+  "proposed_sessions": [
+    {
+      "session_id": "sess_001",
+      "task_id": "quiz_1",
+      "title": "Study for Memory Management Quiz",
+      "date": "2026-09-07",
+      "start": "11:00",
+      "end": "12:00",
+      "priority": "high",
+      "reason": "Prepare for the upcoming quiz, utilizing time immediately after class.",
+      "estimated_minutes": 60
+    },
+    {
+      "session_id": "sess_002",
+      "task_id": "assignment_1",
+      "title": "Work on Process Scheduling Assignment",
+      "date": "2026-09-07",
+      "start": "12:30",
+      "end": "14:30",
+      "priority": "medium",
+      "reason": "Begin working on the assignment due on September 10th.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_003",
+      "task_id": "quiz_1",
+      "title": "Review for Memory Management Quiz",
+      "date": "2026-09-07",
+      "start": "15:00",
+      "end": "16:00",
+      "priority": "high",
+      "reason": "Complete preparation for the quiz due on September 9th.",
+      "estimated_minutes": 60
+    },
+    {
+      "session_id": "sess_004",
+      "task_id": "assignment_1",
+      "title": "Continue Process Scheduling Assignment",
+      "date": "2026-09-08",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "medium",
+      "reason": "Continue and complete the assignment before its deadline.",
+      "estimated_minutes": 120
+    }
+  ],
+  "task_priorities": [
+    {
+      "task_id": "quiz_1",
+      "rank": 1,
+      "priority": "high",
+      "reason": "This quiz is due soonest, on September 9th."
+    },
+    {
+      "task_id": "assignment_1",
+      "rank": 2,
+      "priority": "medium",
+      "reason": "This assignment is due shortly after the quiz, on September 10th."
+    }
+  ],
+  "total_estimated_minutes": 360,
+  "explanation": "This plan prioritizes your upcoming Memory Management Quiz, scheduling two study sessions on Monday, September 7th, to ensure you are fully prepared before its due date on September 9th. For the Process Scheduling Assignment, two sessions are planned across Monday and Tuesday, September 7th and 8th, to complete the work well in advance of its September 10th deadline. All sessions respect your daily study limits and preferred times, avoiding conflicts with your Operating Systems class.",
+  "assumptions": [],
+  "clarification_required": []
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "case_id": "case_06",
+    "title": "Missing deadline",
+    "description": "Assignment exists but due date is unknown.",
+    "difficulty": "medium",
+    "tags": ["missing_info"]
+  },
+  "input": {
+    "student_id": "demo_student_06",
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "planning_horizon_days": 14,
+    "courses": [
+      { "id": "ds", "code": "CS-210", "name": "Data Structures" }
+    ],
+    "deadlines": [
+      {
+        "id": "assignment_1",
+        "course_id": "ds",
+        "title": "BST Implementation",
+        "type": "assignment",
+        "due_at": null,
+        "estimated_hours": 6
+      }
+    ],
+    "timetable": [],
+    "existing_events": [],
+    "preferences": {
+      "timezone": "Asia/Karachi",
+      "max_study_hours_per_day": 4
+    }
+  },
+  "ground_truth": {
+    "must_not_invent": true,
+    "must_flag_missing": ["assignment_1"],
+    "must_not_schedule": ["assignment_1"],
+    "expect_clarification_for": ["assignment_1"]
+  }
+}

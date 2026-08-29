@@ -1,0 +1,57 @@
+{
+  "student_id": "demo_student_01",
+  "reference_now": "2026-09-07T08:00:00+05:00",
+  "proposed_sessions": [
+    {
+      "session_id": "sess_001",
+      "task_id": "quiz_1",
+      "title": "Review memory management",
+      "date": "2026-09-07",
+      "start": "14:00",
+      "end": "16:00",
+      "priority": "high",
+      "reason": "Quiz is due tomorrow morning",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_002",
+      "task_id": "assignment_1",
+      "title": "Work on scheduling assignment",
+      "date": "2026-09-08",
+      "start": "11:00",
+      "end": "13:00",
+      "priority": "high",
+      "reason": "Assignment due in two days",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_003",
+      "task_id": "assignment_1",
+      "title": "Finish scheduling assignment",
+      "date": "2026-09-09",
+      "start": "15:00",
+      "end": "17:00",
+      "priority": "high",
+      "reason": "Final work before due date",
+      "estimated_minutes": 120
+    }
+  ],
+  "task_priorities": [
+    {
+      "task_id": "quiz_1",
+      "rank": 1,
+      "priority": "high",
+      "reason": "Due soonest"
+    },
+    {
+      "task_id": "assignment_1",
+      "rank": 2,
+      "priority": "high",
+      "reason": "Larger assignment due shortly after quiz"
+    }
+  ],
+  "total_estimated_minutes": 360,
+  "explanation": "Prioritized the quiz first because it is due sooner, then split the assignment across two sessions before the due date while avoiding Monday morning class.",
+  "assumptions": [],
+  "clarification_required": []
+}

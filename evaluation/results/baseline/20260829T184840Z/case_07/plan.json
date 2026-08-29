@@ -1,0 +1,62 @@
+{
+  "student_id": "demo_student_07",
+  "reference_now": "2026-09-07T08:00:00+05:00",
+  "proposed_sessions": [
+    {
+      "session_id": "sess_001",
+      "task_id": "assignment_1",
+      "title": "Work on Final Project Milestone",
+      "date": "2026-09-07",
+      "start": "11:00",
+      "end": "13:00",
+      "priority": "high",
+      "reason": "To make significant progress on the Final Project Milestone due tomorrow.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_002",
+      "task_id": "assignment_1",
+      "title": "Work on Final Project Milestone",
+      "date": "2026-09-07",
+      "start": "13:00",
+      "end": "15:00",
+      "priority": "high",
+      "reason": "Continuing work on the urgent Final Project Milestone.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_003",
+      "task_id": "assignment_1",
+      "title": "Work on Final Project Milestone",
+      "date": "2026-09-08",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "high",
+      "reason": "Dedicated time to complete the Final Project Milestone before the deadline.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_004",
+      "task_id": "assignment_1",
+      "title": "Work on Final Project Milestone",
+      "date": "2026-09-08",
+      "start": "12:00",
+      "end": "14:00",
+      "priority": "high",
+      "reason": "Final push to complete and review the Final Project Milestone.",
+      "estimated_minutes": 120
+    }
+  ],
+  "task_priorities": [
+    {
+      "task_id": "assignment_1",
+      "rank": 1,
+      "priority": "high",
+      "reason": "This assignment is due on 2026-09-08 and requires 8 hours of work."
+    }
+  ],
+  "total_estimated_minutes": 480,
+  "explanation": "This plan focuses on completing your 'Final Project Milestone' for CS-301, which is due tomorrow. It allocates 4 hours of study time today and another 4 hours tomorrow, respecting your daily study limits and class schedule. This ensures all 8 estimated hours for the assignment are covered before the deadline.",
+  "assumptions": [],
+  "clarification_required": []
+}

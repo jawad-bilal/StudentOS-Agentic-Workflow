@@ -1,0 +1,16 @@
+{
+  "student_id": "demo_student_06",
+  "reference_now": "2026-09-07T08:00:00+05:00",
+  "proposed_sessions": [],
+  "task_priorities": [],
+  "total_estimated_minutes": 0,
+  "explanation": "No study sessions have been scheduled in this plan because the only identified task, 'BST Implementation' (assignment_1), is missing a due date. A clarification request has been added to address this missing information, which is essential for creating a realistic study schedule within the planning horizon.",
+  "assumptions": [],
+  "clarification_required": [
+    {
+      "task_id": "assignment_1",
+      "field": "due_at",
+      "reason": "The due date for this assignment is missing, preventing it from being scheduled."
+    }
+  ]
+}

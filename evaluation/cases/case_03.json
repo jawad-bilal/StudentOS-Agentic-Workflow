@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "case_id": "case_03",
+    "title": "Schedule conflict",
+    "description": "Study sessions must avoid Monday afternoon OS class.",
+    "difficulty": "medium",
+    "tags": ["timetable", "conflict"]
+  },
+  "input": {
+    "student_id": "demo_student_03",
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "planning_horizon_days": 7,
+    "courses": [
+      { "id": "os", "code": "CS-301", "name": "Operating Systems" }
+    ],
+    "deadlines": [
+      {
+        "id": "assignment_1",
+        "course_id": "os",
+        "title": "Process Scheduling Assignment",
+        "type": "assignment",
+        "due_at": "2026-09-10T23:59:00+05:00",
+        "estimated_hours": 4
+      }
+    ],
+    "timetable": [
+      {
+        "id": "class_os_mon",
+        "course_id": "os",
+        "weekday": 0,
+        "start": "14:00",
+        "end": "16:00",
+        "title": "Operating Systems",
+        "venue": "A-6"
+      }
+    ],
+    "existing_events": [],
+    "preferences": {
+      "timezone": "Asia/Karachi",
+      "max_study_hours_per_day": 4
+    }
+  },
+  "ground_truth": {
+    "must_schedule_before": ["assignment_1"],
+    "must_not_overlap": ["class_os_mon"],
+    "must_not_invent": true,
+    "max_study_hours_per_day": 4
+  }
+}

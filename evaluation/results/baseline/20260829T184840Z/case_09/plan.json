@@ -1,0 +1,111 @@
+{
+  "student_id": "demo_student_09",
+  "reference_now": "2026-09-07T08:00:00+05:00",
+  "proposed_sessions": [
+    {
+      "session_id": "sess_001",
+      "task_id": "quiz_os",
+      "title": "OS Synchronization Quiz Prep",
+      "date": "2026-09-07",
+      "start": "10:00",
+      "end": "11:00",
+      "priority": "high",
+      "reason": "Prepare for the Operating Systems quiz due today.",
+      "estimated_minutes": 60
+    },
+    {
+      "session_id": "sess_002",
+      "task_id": "quiz_os",
+      "title": "OS Synchronization Quiz Prep",
+      "date": "2026-09-07",
+      "start": "11:00",
+      "end": "12:00",
+      "priority": "high",
+      "reason": "Complete preparation for the Operating Systems quiz due today.",
+      "estimated_minutes": 60
+    },
+    {
+      "session_id": "sess_003",
+      "task_id": "assignment_ds",
+      "title": "DS Graph Project Work",
+      "date": "2026-09-07",
+      "start": "12:00",
+      "end": "13:00",
+      "priority": "high",
+      "reason": "Start working on the Data Structures Graph Project due tomorrow.",
+      "estimated_minutes": 60
+    },
+    {
+      "session_id": "sess_004",
+      "task_id": "assignment_ds",
+      "title": "DS Graph Project Work",
+      "date": "2026-09-08",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "high",
+      "reason": "Continue working on the Data Structures Graph Project due today.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_005",
+      "task_id": "assignment_ds",
+      "title": "DS Graph Project Work",
+      "date": "2026-09-08",
+      "start": "12:00",
+      "end": "13:00",
+      "priority": "high",
+      "reason": "Further progress on the Data Structures Graph Project due today.",
+      "estimated_minutes": 60
+    },
+    {
+      "session_id": "sess_006",
+      "task_id": "assignment_os",
+      "title": "OS Kernel Module Work",
+      "date": "2026-09-09",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "medium",
+      "reason": "Begin working on the Operating Systems Kernel Module assignment due today.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_007",
+      "task_id": "assignment_os",
+      "title": "OS Kernel Module Work",
+      "date": "2026-09-09",
+      "start": "12:00",
+      "end": "13:00",
+      "priority": "medium",
+      "reason": "Continue progress on the Operating Systems Kernel Module assignment due today.",
+      "estimated_minutes": 60
+    }
+  ],
+  "task_priorities": [
+    {
+      "task_id": "quiz_os",
+      "rank": 1,
+      "priority": "high",
+      "reason": "Due today, September 7th."
+    },
+    {
+      "task_id": "assignment_ds",
+      "rank": 2,
+      "priority": "high",
+      "reason": "Due tomorrow, September 8th."
+    },
+    {
+      "task_id": "assignment_os",
+      "rank": 3,
+      "priority": "medium",
+      "reason": "Due September 9th."
+    }
+  ],
+  "total_estimated_minutes": 540,
+  "explanation": "This plan prioritizes your most urgent tasks within the daily study limits. The Operating Systems Synchronization Quiz is fully covered before its deadline on Monday. However, due to the maximum daily study hours, the Data Structures Graph Project and the Operating Systems Kernel Module assignment cannot be fully completed by their respective deadlines within this 3-day planning horizon. You have a significant workload that exceeds the available study capacity.",
+  "assumptions": [
+    "The student will adhere to the maximum daily study limit of 3 hours (180 minutes).",
+    "The student will start study sessions at the preferred time of 10:00 AM when possible.",
+    "The estimated hours for assignments are accurate."
+  ],
+  "clarification_required": []
+}

@@ -1,0 +1,85 @@
+{
+  "student_id": "demo_student_05",
+  "reference_now": "2026-09-07T08:00:00+05:00",
+  "proposed_sessions": [
+    {
+      "session_id": "sess_001",
+      "task_id": "quiz_os",
+      "title": "Prepare for Threads Quiz (OS-301)",
+      "date": "2026-09-07",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "high",
+      "reason": "Urgent preparation for the Threads Quiz due tomorrow.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_002",
+      "task_id": "assignment_os",
+      "title": "Work on OS Lab Writeup (OS-301)",
+      "date": "2026-09-07",
+      "start": "12:00",
+      "end": "14:00",
+      "priority": "medium",
+      "reason": "Start working on the OS Lab Writeup to spread the workload.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_003",
+      "task_id": "assignment_os",
+      "title": "Continue OS Lab Writeup (OS-301)",
+      "date": "2026-09-08",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "medium",
+      "reason": "Continue progress on the OS Lab Writeup before its due date.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_004",
+      "task_id": "assignment_ds",
+      "title": "Work on Graph Assignment (CS-210)",
+      "date": "2026-09-08",
+      "start": "12:00",
+      "end": "14:00",
+      "priority": "medium",
+      "reason": "Begin the Graph Assignment to ensure completion by the deadline.",
+      "estimated_minutes": 120
+    },
+    {
+      "session_id": "sess_005",
+      "task_id": "assignment_ds",
+      "title": "Complete Graph Assignment (CS-210)",
+      "date": "2026-09-09",
+      "start": "10:00",
+      "end": "12:00",
+      "priority": "medium",
+      "reason": "Finalize the Graph Assignment on its due date.",
+      "estimated_minutes": 120
+    }
+  ],
+  "task_priorities": [
+    {
+      "task_id": "quiz_os",
+      "rank": 1,
+      "priority": "high",
+      "reason": "Due earliest (September 8th)."
+    },
+    {
+      "task_id": "assignment_os",
+      "rank": 2,
+      "priority": "medium",
+      "reason": "Due September 9th, requires significant work."
+    },
+    {
+      "task_id": "assignment_ds",
+      "rank": 3,
+      "priority": "medium",
+      "reason": "Due September 9th, requires significant work."
+    }
+  ],
+  "total_estimated_minutes": 600,
+  "explanation": "This plan schedules all upcoming deadlines within the next three days, ensuring all required work is completed before its due date. It prioritizes the OS Threads Quiz due tomorrow, followed by the OS Lab Writeup and Graph Assignment, both due the day after. Study sessions are spread across days, respecting the daily maximum study hours and preferred study times.",
+  "assumptions": [],
+  "clarification_required": []
+}

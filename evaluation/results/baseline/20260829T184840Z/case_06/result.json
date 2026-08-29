@@ -1,0 +1,59 @@
+{
+  "case_id": "case_06",
+  "system": "baseline",
+  "plan": {
+    "student_id": "demo_student_06",
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "proposed_sessions": [],
+    "task_priorities": [],
+    "total_estimated_minutes": 0,
+    "explanation": "No study sessions have been scheduled in this plan because the only identified task, 'BST Implementation' (assignment_1), is missing a due date. A clarification request has been added to address this missing information, which is essential for creating a realistic study schedule within the planning horizon.",
+    "assumptions": [],
+    "clarification_required": [
+      {
+        "task_id": "assignment_1",
+        "field": "due_at",
+        "reason": "The due date for this assignment is missing, preventing it from being scheduled."
+      }
+    ]
+  },
+  "grounding": {
+    "findings": []
+  },
+  "verification": {
+    "status": "pass",
+    "issues": [],
+    "warnings": [],
+    "required_changes": [],
+    "checks_run": [
+      "grounding_findings",
+      "timetable_overlap",
+      "existing_event_overlap",
+      "session_overlap",
+      "deadline_violation",
+      "workload_exceeded",
+      "invented_deadline_date"
+    ]
+  },
+  "score": {
+    "deadlines_respected": 25.0,
+    "no_hallucinations": 20.0,
+    "no_timetable_conflicts": 15.0,
+    "workload_distribution": 15.0,
+    "prioritization": 8.0,
+    "missing_information_handling": 10.0
+  },
+  "total_score": 93.0,
+  "runtime_ms": 6667,
+  "error": null,
+  "metadata": {
+    "reference_now": "2026-09-07T08:00:00+05:00",
+    "llm_provider": "gemini",
+    "llm_model": "gemini-2.5-flash",
+    "prompt_hash": "e6befce80bb2882fdca5f4974b3bd679a149180e132314de79b24a7977573eac",
+    "input_hash": "6c8ee27a1c7a12ccb166fd0e769259052ca2a0e4d9381a1e61fe8f1ae542ce1e",
+    "plan_hash": "d0040473389ce33eedb2bc61d09f88d171b21f022bb7e257d468a6fc6b37a2f6",
+    "grounding_findings": 0,
+    "verification_issues": 0
+  }
+}
